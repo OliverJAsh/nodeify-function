@@ -1,0 +1,22 @@
+{
+  "name": "nodeify-function",
+  "version": "0.0.1",
+  "description": "Q helper for nodeifying a promise returning function.",
+  "main": "node.js",
+  "author": "Oliver Joseph Ash <oliverjash@gmail.com>",
+  "dependencies": {
+    "lodash-node": "^2.4.1",
+    "q": "^1.1.1"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "express": "^4.10.2",
+    "mocha": "^2.0.1",
+    "sinon": "^1.12.1",
+    "traceur": "0.0.74",
+    "traceur-source-maps": "^1.0.5"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --compilers js:scripts/mocha-traceur-runner 'tests.js'"
+  }
+}
